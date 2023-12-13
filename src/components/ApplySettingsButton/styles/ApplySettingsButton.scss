@@ -1,0 +1,18 @@
+@import "../../colors/colors.scss";
+
+button.apply-button{
+    margin-top: 12px;
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    padding: 12px 0;
+    border-radius: 12px;
+    &-on-focus-time{
+        background: $darkSecondColor;
+        color: $darkMainColor;
+    }
+    &-on-rest-time{
+        background: $greenSecondColor;
+        color: $greenMainColor;
+    }        
+}

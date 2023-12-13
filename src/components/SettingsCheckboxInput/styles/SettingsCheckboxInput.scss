@@ -1,0 +1,62 @@
+@import "../../colors/colors.scss";
+
+.custom-checkbox {
+    position: relative;
+    padding-left: 36px;
+    cursor: pointer;
+
+    input[type="checkbox"].input-checkbox {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        opacity: 0;
+        z-index: 2;
+        cursor: pointer;
+
+        &-on-focus-time {
+            &:checked + .checkmark {
+                background: url('../../../img/done.svg') center center/contain $darkSecondColor;
+            } 
+
+            &:focus {
+                outline:  $darkMainColor;
+            }
+        }
+
+        &-on-rest-time {
+            &:checked + .checkmark {
+                background: url('../../../img/done-green.svg') center center/contain $greenSecondColor;
+            }
+
+            &:focus {
+                outline: $greenMainColor;
+            }
+        }
+    }
+
+    .checkmark {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background: white;
+        border: 2px solid $darkMainColor;
+        border-radius: 4px;
+    }
+}
+
+
+
+
+.input-label {
+    &-on-focus-time {
+        color: $darkMainColor;
+    }
+
+    &-on-rest-time {
+        color: $greenMainColor;
+    }
+}

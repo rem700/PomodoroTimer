@@ -1,0 +1,42 @@
+@import "../../colors/colors.scss";
+
+.status-bar {
+    display: inline-block;
+    text-align: left;
+    padding: 6px 0;
+    width: 230px;
+    height: 36px;
+    border: 2px solid $darkMainColor;
+    border-radius: 24px;
+    background-color: $darkLighterColor;
+    position: relative;
+    transition: all 0.3s linear;
+
+    &__icon {
+        position: absolute;
+        left: 8%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 400;
+    }
+
+    &-on-focus-time {
+        background-color: $darkLighterColor;
+        border: 2px solid $darkMainColor;
+    }
+
+    &-on-rest-time {
+        background-color: $greenLighterColor;
+        border: 2px solid $greenMainColor;
+    }
+}

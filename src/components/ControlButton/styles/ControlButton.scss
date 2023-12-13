@@ -1,0 +1,44 @@
+@import "../../colors/colors.scss";
+
+.side-button {
+    width: 60px;
+    height: 40px;
+    background-color: $darkLighterColor;
+    transition: all 0.3s linear;
+
+    &__image {
+        left: 50%;
+        width: 16px;
+        height: 16px;
+    }
+
+    &-on-focus-time {
+        background-color: $darkLighterColor;
+    }
+
+    &-on-rest-time {
+        background-color: $greenLighterColor;
+    }
+}
+
+
+.center-button {
+    height: 50px;
+    width: 75px;
+    background-color: $darkSecondColor;
+    transition: all 0.3s linear;
+
+    &__image {
+        left: 52%;
+        width: 24px;
+        height: 24px;
+    }
+
+    &-on-focus-time {
+        background-color: $darkSecondColor;
+    }
+
+    &-on-rest-time {
+        background-color: $greenSecondColor;
+    }
+}

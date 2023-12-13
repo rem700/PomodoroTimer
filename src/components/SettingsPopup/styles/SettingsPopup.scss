@@ -1,0 +1,49 @@
+@import "../../colors/colors.scss";
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup {
+    background: $darkBackgroundColor;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    min-width: 250px;
+
+    @media (max-width: 430px) {
+        width: 90%;
+    }
+
+    &-on-focus-time{
+        background: $darkBackgroundColor;
+        color: $darkMainColor;
+    }
+    &-on-rest-time{
+        background: $greenBackgroundColor;
+        color: $greenMainColor;
+    }
+    
+}
+
+.popup-overlay.active .popup {
+    transform: scale(1);
+}

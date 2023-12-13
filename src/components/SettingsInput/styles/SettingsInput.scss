@@ -1,0 +1,41 @@
+@import "../../colors/colors.scss";
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    position: relative;
+
+    .input {
+        width: 50px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 12px;
+        border: 2px solid $darkMainColor;
+        border-radius: 4px;
+        text-align: center;
+        
+        &-on-focus-time {
+            color: $darkMainColor;
+            border: 2px solid $darkMainColor;
+            &:focus{outline: $darkMainColor;}
+        }
+
+        &-on-rest-time {
+            color: $greenMainColor;
+            border: 2px solid $greenMainColor;
+            &:focus{outline: $greenMainColor;}
+        }
+
+        .input-label {
+            &-on-focus-time {
+                color: $darkMainColor;
+            }
+
+            &-on-rest-time {
+                color: $greenMainColor; 
+            }
+        }
+    }
+}
