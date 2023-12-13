@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "https://rem700.github.io/PomodoroTimer/static/css/main.00c466de.css",
+    "main.js": "https://rem700.github.io/PomodoroTimer/static/js/main.ebcca0eb.js",
+    "static/media/bell.wav": "https://rem700.github.io/PomodoroTimer/static/media/bell.2b0a0d91ce8daba3709d.wav",
+    "index.html": "https://rem700.github.io/PomodoroTimer/index.html",
+    "static/media/done-green.svg": "https://rem700.github.io/PomodoroTimer/static/media/done-green.eab18d2ef1812537cc2f.svg",
+    "static/media/done.svg": "https://rem700.github.io/PomodoroTimer/static/media/done.7a80963d5a10adca4b38.svg",
+    "main.00c466de.css.map": "https://rem700.github.io/PomodoroTimer/static/css/main.00c466de.css.map",
+    "main.ebcca0eb.js.map": "https://rem700.github.io/PomodoroTimer/static/js/main.ebcca0eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00c466de.css",
+    "static/js/main.ebcca0eb.js"
+  ]
+}
