@@ -1,5 +1,5 @@
+import React from "react";
 import CounterButtons from "../CounterButtons/CounterButtons";
-
 import "./styles/SettingsInput.scss";
 
 interface ISettingsInput {
@@ -33,9 +33,10 @@ const SettingsInput: React.FC<ISettingsInput> = ({
                 id={inputId}
                 className={inputClass}
                 value={isPeriods ? Math.min(99, value) : Math.min(60, value / 60)}
-                onChange={(e) =>
-                    onChange(Math.max(0, (parseInt(e.target.value) || 0) * 60))
-                }
+                onChange={(e) => {
+                    const inputValue = isPeriods ? Math.max(1, parseInt(e.target.value)) : Math.max(1, parseInt(e.target.value) || 0) * 60;
+                    onChange(inputValue);
+                }}
             />
             <CounterButtons
                 timerMessage={timerMessage}

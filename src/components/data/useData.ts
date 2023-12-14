@@ -14,7 +14,7 @@ import stopGreen from "../../img/stop-green.png";
 export function useData() {
     const timerMessageList = {
         focus: "Focus on work",
-        break: "Have a little break",
+        break: "Have a rest",
         complete: "Session complete",
     };
 

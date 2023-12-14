@@ -1,11 +1,13 @@
-@import "../../colors/colors.scss";
+@import "../../../colors/colors.scss";
+@import "../../../breakpoints/breakpoints.scss";
 
 .numerical-timer {
     text-align: center;
-    padding: 30px 0;
+    padding: 24vh 0;
     background-color: $darkBackgroundColor;
     height: 100vh;
     transition: all 0.3s linear;
+    width: 100%;
 
     &__button-group {
         button {
@@ -44,11 +46,13 @@
         }
     }
 
-    @media (max-width: 430px) {
-        width: 100%;
-        height: 100vh;
+    @media (min-width: $PC) {
+        padding: 220px 0;
     }
 
+    @media (max-width: $mobile) {
+        padding: 20vh 0;
+    }
     &-on-focus-time {
         background-color: $darkBackgroundColor;
         color: $darkMainColor;
@@ -66,6 +70,7 @@
         letter-spacing: -10px;
     }
 }
+
 
 h4 {
     font-weight: 300;

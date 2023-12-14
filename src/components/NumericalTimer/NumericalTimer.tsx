@@ -94,7 +94,7 @@ const NumericalTimer = () => {
             }
         }
         setIsOnFocusTimer(!isOnFocusTimer);
-        isSoundOn ? audio.play() : (audio.pause())
+        isSoundOn ? audio.play() : audio.pause();
     };
 
     const handleGetTitleIcon = () => {
@@ -105,7 +105,6 @@ const NumericalTimer = () => {
         } else return data.sleepBlack;
     };
 
-
     useEffect(() => {
         if (time === 0) {
             handleSessionCompletion();
@@ -113,8 +112,8 @@ const NumericalTimer = () => {
     }, [time, isOnFocusTimer, completedSessions]);
 
     const handleSoundMute = () => {
-        isSoundOn ? setIsSoundOn(false) : setIsSoundOn(true)
-    }
+        isSoundOn ? setIsSoundOn(false) : setIsSoundOn(true);
+    };
 
     const minutes = Math.floor(time / 60);
     const remainingSeconds = time % 60;
@@ -145,10 +144,8 @@ const NumericalTimer = () => {
             : "center-button-on-rest-time"
         }`;
 
-    const statusBarStyle = `numerical-timer__status-bar status-bar ${isOnFocusTimer
-        ? "status-bar-on-focus-time"
-        : "status-bar-on-rest-time"
-    }`
+    const statusBarStyle = `numerical-timer__status-bar status-bar ${isOnFocusTimer ? "status-bar-on-focus-time" : "status-bar-on-rest-time"
+        }`;
     return (
         <Fragment>
             <div
@@ -157,8 +154,14 @@ const NumericalTimer = () => {
                         : "numerical-timer-on-rest-time"
                     }`}
             >
-                <StatusBar iconSrc={handleGetTitleIcon()} timerMessage={timerMessage} style={statusBarStyle}/>
-                
+                <StatusBar
+                    iconSrc={handleGetTitleIcon()}
+                    timerMessage={timerMessage}
+                    style={statusBarStyle}
+                    onFocusTimer={isOnFocusTimer}
+                    currentPeriod={completedSessions + 1}
+                />
+
                 <div className="numerical-timer__time time">
                     <p>{formattedMinutes}</p>
                     <p>{formattedSeconds}</p>

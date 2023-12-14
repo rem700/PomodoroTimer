@@ -59,7 +59,7 @@ const SettingsPopup: React.FC<ISettingsPopup> = ({
                 />
                 <SettingsCheckboxInput labelClass={labelClass} inputCheckboxClass={inputCheckboxClass} isSoundOn={isSoundOn} handleSoundMute={handleSoundMute}/>
                 <SettingsInput
-                    label="Focus time length"
+                    label="Focus time length, min"
                     inputId="focus-time"
                     inputClass={inputClass}
                     labelClass={labelClass}
@@ -69,7 +69,7 @@ const SettingsPopup: React.FC<ISettingsPopup> = ({
                     handleCounterChange={handleCounterChange}
                 />
                 <SettingsInput
-                    label="Rest time length"
+                    label="Rest time length, min"
                     inputId="rest-time"
                     inputClass={inputClass}
                     labelClass={labelClass}

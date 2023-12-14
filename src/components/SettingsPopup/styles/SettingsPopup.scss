@@ -1,4 +1,5 @@
-@import "../../colors/colors.scss";
+@import "../../../colors/colors.scss";
+@import "../../../breakpoints/breakpoints.scss";
 
 .popup-overlay {
     position: fixed;
@@ -29,7 +30,7 @@
     transition: transform 0.3s ease;
     min-width: 250px;
 
-    @media (max-width: 430px) {
+    @media (max-width: $mobile) {
         width: 90%;
     }
 
