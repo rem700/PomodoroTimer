@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "https://rem700.github.io/PomodoroTimer/static/css/main.842c4f5c.css",
+    "main.css": "https://rem700.github.io/PomodoroTimer/static/css/main.6bed1eb4.css",
     "main.js": "https://rem700.github.io/PomodoroTimer/static/js/main.0cf34b37.js",
     "static/media/bell.wav": "https://rem700.github.io/PomodoroTimer/static/media/bell.2b0a0d91ce8daba3709d.wav",
     "index.html": "https://rem700.github.io/PomodoroTimer/index.html",
     "static/media/done-green.svg": "https://rem700.github.io/PomodoroTimer/static/media/done-green.eab18d2ef1812537cc2f.svg",
     "static/media/done.svg": "https://rem700.github.io/PomodoroTimer/static/media/done.7a80963d5a10adca4b38.svg",
-    "main.842c4f5c.css.map": "https://rem700.github.io/PomodoroTimer/static/css/main.842c4f5c.css.map",
+    "main.6bed1eb4.css.map": "https://rem700.github.io/PomodoroTimer/static/css/main.6bed1eb4.css.map",
     "main.0cf34b37.js.map": "https://rem700.github.io/PomodoroTimer/static/js/main.0cf34b37.js.map"
   },
   "entrypoints": [
-    "static/css/main.842c4f5c.css",
+    "static/css/main.6bed1eb4.css",
     "static/js/main.0cf34b37.js"
   ]
 }
